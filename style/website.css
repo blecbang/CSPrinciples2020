@@ -4,8 +4,9 @@
 }
 
 .topbar {
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #ff00ff;
+  color: #000000;
   font-family: "Comic Sans MS", "Times New Roman", sans-serif;
   font-size: 24px;
+  overflow: hidden;
 }
