@@ -9,9 +9,6 @@ function checkTheme() {
 		} else if (activemode.match("dark")) {
 			cs.href = "style/darkmode.css";
 			buttontext.value = "light mode";
-		} else {
-			cs.href = "style/lightmode.css";
-			buttontext.value = "dark mode";
 		}
 }
 
