@@ -4,6 +4,12 @@
 		<meta charset="utf-8">
 		<title>my stuff</title>
 		<link id="style1" rel="stylesheet" href="style/darkmode.css">
+		<style>
+			.stickbug {
+				display: none;
+				width: 25%;
+			}
+		</style>
 	</head>
 	<body>
 		<div class="topbar">
@@ -11,15 +17,35 @@
     			<a class="active" href="portfolio.html">portfolio</a>
     			<a href="aboutme.html">about</a>
 		</div>
-		<div class="title">
-    			<h1>top text <br> bottom text</h1>
+		<div class="text">
+    			<h1>top text</h1> <br>
+			<a id="pranked">whats this</a> <br>
+			<video id="bog" class="stickbug" loop>
+				<source src="videos/lmao.mp4" type="video/mp4"></source>
+			</video>
+			<h1>bottom text</h1>
 		</div>
 		<footer>
-			<input id="button" type="button" value="light mode"></input>
+			<input id="button" type="button" class="clickme" value="light mode"></input>
 		</footer>
 
 		<script src="js/darkMode.js"></script>
 		<script src="js/checkTheme.js"></script>
-
+		<script>
+			var vid = document.getElementById("bog");
+			var bugged = document.getElementById("pranked");
+			function stickBugged() {
+				if (vid.style.display === "inline") {
+					vid.style.display = "none";
+					vid.pause();
+					vid.currentTime = 0;
+				} else {
+					vid.style.display = "inline";
+					vid.play();
+				}
+			}
+			bugged.addEventListener ("click", stickBugged);
+		</script>
+					
 	</body>
 </html>

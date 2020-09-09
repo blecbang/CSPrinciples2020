@@ -1,6 +1,6 @@
 function checkTheme() {
 	console.log('hi');
-	var activemode = localStorage.getItem('mode');
+	var activemode = localStorage.getItem("mode") || "light";
 	var cs = document.getElementById("style1");
 	var buttontext = document.getElementById("button");
 		if (activemode.match("light")) {

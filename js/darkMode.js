@@ -4,12 +4,12 @@ function darkMode() {
 	var buttontext = document.getElementById("button");
 		if (cs.href.match("style/lightmode.css")) {
 			cs.href = "style/darkmode.css";
-			buttontext.value = "light mode";
-			localStorage.setItem('mode', 'dark');
+			buttontext.value = "light mode"
+			localStorage.setItem("mode", "dark")
 		} else {
 			cs.href = "style/lightmode.css";
-			buttontext.value = "dark mode";
-			localStorage.setItem('mode', 'light');
+			buttontext.value = "dark mode"
+			localStorage.setItem("mode", "light")
 		}
 	}
 

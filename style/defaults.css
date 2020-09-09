@@ -1,21 +1,9 @@
-body::before {
-	content:"";
-	background: url("../images/catjamkiss.gif");
-	background-size: cover;
-	background-repeat: no-repeat;
-	height: 100%;
-	width: 100%;
-	opacity: 0.6;
-	position: absolute;
-	z-index: -1;
-}
-
 body {
-	background-color: cyan;
+	background-color: grey;
 	overflow: hidden;
 }
 
-.text {
+.title {
   font-family: "Comic Sans MS", "Times New Roman", sans-serif;
   text-align: center;
 }
@@ -43,16 +31,4 @@ footer {
 	bottom: 0;
 	font-family: "Comic Sans MS", "Times New Roman", sans-serif;
 	text-align: center;
-}
-
-.clickme {
-	font-size: 24px;
-	font-family: "Comic Sans MS", "Times New Roman", sans-serif;
-	background-color: magenta;
-	color: black;
-	border: 1px solid black;
-}
-
-.clickme:focus {
-	outline: none;
 }
