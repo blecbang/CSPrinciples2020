@@ -1,20 +1,48 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>my mancave</title>
-    <link rel="stylesheet" href="style/website.css">
-  </head>
-  <body bgcolor="#00FFFF">
-    <div class="topbar">
-      <a class="active" href="index.html">home</a>
-      <a href="portfolio.html">portfolio</a>
-      <a href="aboutme.html">about</a>
-    </div>
-    <div class="title">
-      <h1>hi<br/> I am Alec Wang</h1>
-      <img src="images/YEP.png" width="128" height="125">
-      <img src="images/PEY.png" width="128" height="125">
-    </div>
-  </body>
+	<head>
+		<meta charset="utf-8">
+		<title>my mancave</title>
+		<link id="style1" rel="stylesheet" href="style/darkmode.css">
+		<style>
+		</style>
+
+	</head>
+	<body>
+		<div class="page"></div>
+		<div class="topbar">
+			<a class="active" href="index.html">home</a>
+			<a href="portfolio.html">portfolio</a>
+			<a href="aboutme.html">about</a>
+		</div>
+		<div class="title">
+			<h1>hi<br/> I am Alec Wang</h1>
+			<img id="pepe1" src="images/YEP.png" width="128" height="125">
+			<img id="pepe2" src="images/PEY.png" width="128" height="125">
+		</div>
+		<footer>
+			<input id="button" type="button" value=""></input>
+		</footer>
+
+		<script src="js/checkTheme.js"></script>
+		<script src="js/darkMode.js"></script>
+		<script>
+			var cs = document.getElementById("style1");
+			var img1 = document.getElementById("pepe1");
+			var img2 = document.getElementById("pepe2");
+			var button = document.getElementById("button");	
+			function setPepe() {
+				if (cs.href.match("style/lightmode.css")) {
+					img1.src = "images/YEP.png";
+					img2.src = "images/PEY.png";
+				} else {
+					img1.src = "images/YZE.png";
+					img2.src = "images/EZY.png";
+				}
+			}
+			window.onload = setPepe();
+			button.addEventListener ("click", setPepe);
+
+		</script>
+	</body>
 </html>
