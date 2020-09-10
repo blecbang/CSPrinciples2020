@@ -36,6 +36,15 @@ a {
   text-decoration: none;
 }
 
+a:link {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	cursor:pointer;
+}
+
 footer {
 	position: fixed;
 	left: 0;
