@@ -21,8 +21,10 @@ body {
 .text {
   font-family: "Comic Sans MS", "Times New Roman", sans-serif;
   text-align: center;
-	color: white;
-	position: static;
+  color: white;
+  position: static;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 .topbar {
